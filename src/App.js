@@ -59,7 +59,7 @@ function App() {
             <BrowserRouter>
                 <NavBar cartItems={cartItems} />
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/shopping-cart-home" element={<Home />}></Route>
                     <Route
                         path="/shop"
                         element={
@@ -70,7 +70,7 @@ function App() {
                         }
                     ></Route>
                     <Route
-                        path="/shoppingcart"
+                        path="/shopping-cart"
                         element={
                             <ShoppingCart
                                 cartItems={cartItems}
