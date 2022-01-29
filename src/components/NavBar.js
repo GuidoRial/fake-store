@@ -15,7 +15,7 @@ const NavBar = ({ cartItems }) => {
             <h3>FAKE STORE</h3>
             <ul className="nav-links">
                 <li>
-                    <Link style={navStyle} to="/shopping-cart-home" label="Home">
+                    <Link style={navStyle} to="/" label="Home">
                         HOME
                     </Link>
                 </li>
