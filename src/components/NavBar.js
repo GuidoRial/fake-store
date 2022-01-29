@@ -15,7 +15,7 @@ const NavBar = ({ cartItems }) => {
             <h3>FAKE STORE</h3>
             <ul className="nav-links">
                 <li>
-                    <Link style={navStyle} to="/" label="Home">
+                    <Link style={navStyle} to="/shopping-cart-home" label="Home">
                         HOME
                     </Link>
                 </li>
@@ -28,7 +28,7 @@ const NavBar = ({ cartItems }) => {
                 <li>
                     <Link
                         style={navStyle}
-                        to="/shoppingcart"
+                        to="/shopping-cart"
                         label="Shoppingcart"
                     >
                         <i className="fas fa-shopping-cart">
