@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.c5221050.css",
-    "main.js": "/shopping-cart/static/js/main.7e8970af.js",
-    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
-    "static/media/moto_g9_play.jpg": "/shopping-cart/static/media/moto_g9_play.8355530d57b443018f8a.jpg",
-    "static/media/iphone12.jpg": "/shopping-cart/static/media/iphone12.7891231327e187450cf2.jpg",
-    "static/media/iphone11.jpg": "/shopping-cart/static/media/iphone11.898f40d208421a2ead51.jpg",
-    "static/media/xiaomi_11T.jpg": "/shopping-cart/static/media/xiaomi_11T.0e7cf7ac5b79eb8247dc.jpg",
-    "static/media/xiaomi_redmi_note_10_pro.jpg": "/shopping-cart/static/media/xiaomi_redmi_note_10_pro.b1ae76ec9d0897be4dff.jpg",
-    "static/media/motorola_edge_20_lite.jpg": "/shopping-cart/static/media/motorola_edge_20_lite.5c470fa2f31b3097fad0.jpg",
-    "static/media/xiaomi_mi_11_ultra.jpg": "/shopping-cart/static/media/xiaomi_mi_11_ultra.72842479dce44d73c019.jpg",
-    "static/media/samsung_galaxy_note_20.jpg": "/shopping-cart/static/media/samsung_galaxy_note_20.beb06c6beb0a626ff4d3.jpg",
-    "index.html": "/shopping-cart/index.html",
-    "main.c5221050.css.map": "/shopping-cart/static/css/main.c5221050.css.map",
-    "main.7e8970af.js.map": "/shopping-cart/static/js/main.7e8970af.js.map",
-    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+    "main.css": "/shopping-cart-home/static/css/main.c5221050.css",
+    "main.js": "/shopping-cart-home/static/js/main.ee4e99ec.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart-home/static/js/787.d6fe38e8.chunk.js",
+    "static/media/moto_g9_play.jpg": "/shopping-cart-home/static/media/moto_g9_play.8355530d57b443018f8a.jpg",
+    "static/media/iphone12.jpg": "/shopping-cart-home/static/media/iphone12.7891231327e187450cf2.jpg",
+    "static/media/iphone11.jpg": "/shopping-cart-home/static/media/iphone11.898f40d208421a2ead51.jpg",
+    "static/media/xiaomi_11T.jpg": "/shopping-cart-home/static/media/xiaomi_11T.0e7cf7ac5b79eb8247dc.jpg",
+    "static/media/xiaomi_redmi_note_10_pro.jpg": "/shopping-cart-home/static/media/xiaomi_redmi_note_10_pro.b1ae76ec9d0897be4dff.jpg",
+    "static/media/motorola_edge_20_lite.jpg": "/shopping-cart-home/static/media/motorola_edge_20_lite.5c470fa2f31b3097fad0.jpg",
+    "static/media/xiaomi_mi_11_ultra.jpg": "/shopping-cart-home/static/media/xiaomi_mi_11_ultra.72842479dce44d73c019.jpg",
+    "static/media/samsung_galaxy_note_20.jpg": "/shopping-cart-home/static/media/samsung_galaxy_note_20.beb06c6beb0a626ff4d3.jpg",
+    "index.html": "/shopping-cart-home/index.html",
+    "main.c5221050.css.map": "/shopping-cart-home/static/css/main.c5221050.css.map",
+    "main.ee4e99ec.js.map": "/shopping-cart-home/static/js/main.ee4e99ec.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart-home/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5221050.css",
-    "static/js/main.7e8970af.js"
+    "static/js/main.ee4e99ec.js"
   ]
 }
