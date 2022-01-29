@@ -1,7 +1,7 @@
 # Shopping Cart
 
 ## Live Preview
-
+https://guidorial.github.io/shopping-cart/
 
 ## General Info
 This project was made as part of The Odin Project's curriculum. 

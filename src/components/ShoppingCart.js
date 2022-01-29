@@ -12,7 +12,11 @@ const ShoppingCart = ({
     );
 
     const handleCheckout = () => {
-        alert("Thank you for your purchase!");
+        if (cartItems.length === 0) {
+            alert("The cart is empty");
+        } else {
+            alert("Thank you for your purchase!");
+        }
     };
     return (
         <div className="cart-items">

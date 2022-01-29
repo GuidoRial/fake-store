@@ -30,9 +30,7 @@ function App() {
         }
     };
 
-    const emptyCart = () => {
-        setCartItems([]);
-    };
+
 
     const handleRemoveProduct = (product) => {
         const productExist = cartItems.find((item) => item.id === product.id);
@@ -51,6 +49,10 @@ function App() {
             );
         }
     };
+
+        const emptyCart = () => {
+            setCartItems([]);
+        };
 
     return (
         <div className="App">
