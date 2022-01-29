@@ -30,6 +30,10 @@ function App() {
         }
     };
 
+    const emptyCart = () => {
+        setCartItems([]);
+    };
+
     const handleRemoveProduct = (product) => {
         const productExist = cartItems.find((item) => item.id === product.id);
         if (productExist.quantity === 1) {
@@ -70,6 +74,7 @@ function App() {
                                 cartItems={cartItems}
                                 handleAddProduct={handleAddProduct}
                                 handleRemoveProduct={handleRemoveProduct}
+                                emptyCart={emptyCart}
                             />
                         }
                     ></Route>

@@ -98,7 +98,8 @@ i {
     align-items: center;
 }
 
-.go-to-shop-button, .checkout-button {
+.go-to-shop-button,
+.checkout-button {
     font-weight: 700;
     font-size: 18px;
     border-radius: 5px;
@@ -188,10 +189,9 @@ i {
     cursor: pointer;
 }
 
-.checkout-button{
-  border: none;
-  border-radius: 3px;
-
+.checkout-button {
+    border: none;
+    border-radius: 3px;
 }
 
 .cart-items-total-price-name {
@@ -207,4 +207,15 @@ i {
 .cart-items-total-price {
     display: flex;
     padding-left: 45%;
+}
+
+
+
+.empty-cart-button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 18px;
+    cursor: pointer;
 }

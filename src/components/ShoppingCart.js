@@ -1,17 +1,29 @@
 import React from "react";
 
-const ShoppingCart = ({ cartItems, handleAddProduct, handleRemoveProduct }) => {
+const ShoppingCart = ({
+    cartItems,
+    handleAddProduct,
+    handleRemoveProduct,
+    emptyCart,
+}) => {
     const totalPrice = cartItems.reduce(
         (price, item) => price + item.quantity * item.price,
         0
     );
 
     const handleCheckout = () => {
-        alert("Thank you for your purchase!")
-    }
+        alert("Thank you for your purchase!");
+    };
     return (
         <div className="cart-items">
-            <div className="cart-items-header">Shopping Cart</div>
+            <h2 className="cart-items-header">Shopping Cart</h2>
+            <div className="empty-cart">
+                {cartItems.length > 0 && (
+                    <button className="empty-cart-button" onClick={emptyCart}>
+                        Empty Cart
+                    </button>
+                )}
+            </div>
             {cartItems.length === 0 && (
                 <div className="cart-items-empty">
                     There are no items in the cart
@@ -50,7 +62,9 @@ const ShoppingCart = ({ cartItems, handleAddProduct, handleRemoveProduct }) => {
             <div className="cart-items-total-price-name">
                 Total price:
                 <div className="cart-items-total-price">${totalPrice}</div>
-                <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
+                <button className="checkout-button" onClick={handleCheckout}>
+                    Checkout
+                </button>
             </div>
         </div>
     );
