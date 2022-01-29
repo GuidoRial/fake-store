@@ -1,10 +1,6 @@
 import React from "react";
 
-const ShoppingCart = ({
-    cartItems,
-    handleAddProduct,
-    handleRemoveProduct,
-}) => {
+const ShoppingCart = ({ cartItems, handleAddProduct, handleRemoveProduct }) => {
     const totalPrice = cartItems.reduce(
         (price, item) => price + item.quantity * item.price,
         0
@@ -40,7 +36,7 @@ const ShoppingCart = ({
                                 -
                             </button>
                         </div>
-                        <div className="cart-items-price">
+                        <div>
                             {item.quantity} * {item.price}
                         </div>
                     </div>
@@ -50,6 +46,7 @@ const ShoppingCart = ({
             <div className="cart-items-total-price-name">
                 Total price:
                 <div className="cart-items-total-price">${totalPrice}</div>
+                <button className="checkout-button">Checkout</button>
             </div>
         </div>
     );
