@@ -51,7 +51,7 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
-                <NavBar />
+                <NavBar cartItems={cartItems} />
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route

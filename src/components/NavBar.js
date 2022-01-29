@@ -1,7 +1,11 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-const NavBar = () => {
+const NavBar = ({ cartItems }) => {
+    const amountOfItems = cartItems.reduce((amount, item) => {
+        return amount + item.quantity;
+    }, 0);
+
     const navStyle = {
         color: "white",
         textDecoration: "none",
@@ -27,7 +31,13 @@ const NavBar = () => {
                         to="/shoppingcart"
                         label="Shoppingcart"
                     >
-                        <i className="fas fa-shopping-cart"></i>
+                        <i className="fas fa-shopping-cart">
+                            {cartItems.length > 0 && (
+                                <div className="amount-of-items">
+                                    {amountOfItems}
+                                </div>
+                            )}
+                        </i>
                     </Link>
                 </li>
             </ul>
