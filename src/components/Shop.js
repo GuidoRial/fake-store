@@ -4,7 +4,8 @@ const Shop = ({ productItems, handleAddProduct }) => {
     return (
         <div className="products">
             {productItems.map((productItem) => (
-                <div className="card" id={productItem.id}>
+                //Never forget, it's key={}, not id={}, React won't stop screaming it at you if you forget
+                <div className="card" key={productItem.id}>
                     <img
                         className="product-image"
                         src={productItem.image}
@@ -17,7 +18,12 @@ const Shop = ({ productItems, handleAddProduct }) => {
                         <h4>${productItem.price}</h4>
                     </div>
                     <div>
-                        <button className="add-to-cart" onClick={() => handleAddProduct(productItem)}>Add to Cart</button>
+                        <button
+                            className="add-to-cart"
+                            onClick={() => handleAddProduct(productItem)}
+                        >
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             ))}

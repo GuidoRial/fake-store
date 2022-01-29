@@ -8,65 +8,66 @@ import MotorolaEdge20LiteImage from "../assets/motorola_edge_20_lite.jpg";
 import SamsungGalaxyA72Image from "../assets/samsung_galaxy_A72.jpg";
 import XiaomiRedmiNote10Image from "../assets/xiaomi_redmi_note_10_pro.jpg";
 import iPhone12Image from "../assets/iphone12.jpg";
+import uniqid from "uniqid";
 
 const data = {
     productItems: [
         {
-            id: "1",
+            id: uniqid(),
             name: "iPhone 11",
             price: 999,
             image: iphone11Image,
         },
         {
-            id: "2",
+            id: uniqid(),
             name: "Moto G9 Play",
             price: 999,
             image: motoG9PlayImage,
         },
         {
-            id: "3",
+            id: uniqid(),
             name: "Samsung Galaxy A32",
             price: 999,
             image: SamsungGalaxyA32Image,
         },
         {
-            id: "4",
+            id: uniqid(),
             name: "Samsung Galaxy Note 20",
             price: 999,
             image: SamsungGalaxyNote20Image,
         },
         {
-            id: "5",
+            id: uniqid(),
             name: "Xiaomi 11T",
             price: 999,
             image: Xiaomi11TImage,
         },
         {
-            id: "6",
+            id: uniqid(),
             name: "Xiaomi Mi 11 Ultra",
             price: 999,
             image: XiaomiMi11UltraImage,
         },
         {
-            id: "7",
+            id: uniqid(),
             name: "Motorola Edge 20 Lite",
             price: 999,
             image: MotorolaEdge20LiteImage,
         },
         {
-            id: "8",
+            id: uniqid(),
             name: "Samsung Galaxy A72",
             price: 999,
             image: SamsungGalaxyA72Image,
         },
         {
-            id: "9",
+            id: uniqid(),
             name: "Xiaomi Redmi Note 10 Pro",
             price: 999,
             image: XiaomiRedmiNote10Image,
         },
         {
-            id: "10",
+            id: uniqid(),
             name: "iPhone 12",
             price: 999,
             image: iPhone12Image,
