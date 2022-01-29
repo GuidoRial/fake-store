@@ -5,6 +5,10 @@ const ShoppingCart = ({ cartItems, handleAddProduct, handleRemoveProduct }) => {
         (price, item) => price + item.quantity * item.price,
         0
     );
+
+    const handleCheckout = () => {
+        alert("Thank you for your purchase!")
+    }
     return (
         <div className="cart-items">
             <div className="cart-items-header">Shopping Cart</div>
@@ -46,7 +50,7 @@ const ShoppingCart = ({ cartItems, handleAddProduct, handleRemoveProduct }) => {
             <div className="cart-items-total-price-name">
                 Total price:
                 <div className="cart-items-total-price">${totalPrice}</div>
-                <button className="checkout-button">Checkout</button>
+                <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
             </div>
         </div>
     );
