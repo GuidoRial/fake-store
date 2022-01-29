@@ -13,42 +13,45 @@ function App() {
     const [cartItems, setCartItems] = useState([]);
 
     const handleAddProduct = (product) => {
-        const productExist = cartItems.find((item) => item.id === product.id);
-        if (productExist) {
-            setCartItems(
-                cartItems.map((item) =>
-                    item.id === product.id
-                        ? {
-                              ...productExist,
-                              quantity: productExist.quantity + 1,
-                          }
-                        : item
-                )
-            );
+        let updatedProductList;
+
+        if (getProductFromCart(product)) {
+            updatedProductList = updateCartQuantity('add', product)
         } else {
-            setCartItems([...cartItems, { ...product, quantity: 1 }]);
+            updatedProductList = [...cartItems, { ...product, quantity: 1 }];
         }
+
+        setCartItems(updatedProductList)
     };
-
-
 
     const handleRemoveProduct = (product) => {
-        const productExist = cartItems.find((item) => item.id === product.id);
-        if (productExist.quantity === 1) {
-            setCartItems(cartItems.filter((item) => item.id !== product.id));
+        let updatedProductList;
+
+        if (getProductFromCart(product).quantity > 1) {
+            updatedProductList = updateCartQuantity('subtract', product)
         } else {
-            setCartItems(
-                cartItems.map((item) =>
-                    item.id === product.id
-                        ? {
-                              ...productExist,
-                              quantity: productExist.quantity - 1,
-                          }
-                        : item
-                )
-            );
+            updatedProductList = cartItems.filter((item) => item.id !== product.id);
         }
+        
+        setCartItems(updatedProductList)
     };
+
+    function getProductFromCart(product) {
+        return cartItems.find((item) => item.id === product.id);
+    }
+
+    function updateCartQuantity(operation, product) {
+        const indexOfProduct = cartItems.findIndex(item => item.id === product.id);
+        const products = [...cartItems]
+
+        if (operation == 'add') {
+            products[indexOfProduct].quantity += 1;
+        } else {
+            products[indexOfProduct].quantity -= 1;
+        }
+
+        return products;
+    }
 
         const emptyCart = () => {
             setCartItems([]);
