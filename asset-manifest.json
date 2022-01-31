@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.c5221050.css",
-    "main.js": "/shopping-cart/static/js/main.f64e5a0f.js",
+    "main.js": "/shopping-cart/static/js/main.f3e34f0a.js",
     "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
     "static/media/moto_g9_play.jpg": "/shopping-cart/static/media/moto_g9_play.8355530d57b443018f8a.jpg",
     "static/media/iphone12.jpg": "/shopping-cart/static/media/iphone12.7891231327e187450cf2.jpg",
@@ -13,11 +13,11 @@
     "static/media/samsung_galaxy_note_20.jpg": "/shopping-cart/static/media/samsung_galaxy_note_20.beb06c6beb0a626ff4d3.jpg",
     "index.html": "/shopping-cart/index.html",
     "main.c5221050.css.map": "/shopping-cart/static/css/main.c5221050.css.map",
-    "main.f64e5a0f.js.map": "/shopping-cart/static/js/main.f64e5a0f.js.map",
+    "main.f3e34f0a.js.map": "/shopping-cart/static/js/main.f3e34f0a.js.map",
     "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5221050.css",
-    "static/js/main.f64e5a0f.js"
+    "static/js/main.f3e34f0a.js"
   ]
 }
