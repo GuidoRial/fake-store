@@ -1,6 +1,6 @@
 {
-    "homepage": "https://guidorial.github.io/shopping-cart",
-    "name": "shopping-cart",
+    "homepage": "https://guidorial.github.io/fake-store",
+    "name": "fake-store",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

@@ -96,6 +96,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .go-to-shop-button,
@@ -134,7 +135,7 @@ i {
 
 .cart-items {
     margin: 30px auto;
-    width: 50%;
+    width: 80%;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -202,18 +203,28 @@ i {
     font-size: 20px;
     font-weight: 700;
     border-top: 1px solid black;
+
 }
 
 .cart-items-total-price {
     display: flex;
-    padding-left: 45%;
 }
 
 .empty-cart-button {
     border: none;
     border-radius: 5px;
     height: 30px;
-    width: 200px;
+    width: 80%;
     font-size: 18px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cart-item-list {
+        flex-direction: column;
+    }
+    .cart-items-total-price-name {
+  
+    flex-direction: column;
+}
 }
