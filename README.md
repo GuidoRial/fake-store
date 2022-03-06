@@ -1,4 +1,4 @@
-# Shopping Cart
+# Fake Store
 
 ## Live Preview
 
